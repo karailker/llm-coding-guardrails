@@ -1,0 +1,5 @@
+# Cursor
+
+This repository's coding guidelines live in [`AGENTS.md`](./AGENTS.md) at the repository root.
+
+Read `AGENTS.md` in full and follow it. Cursor reads AGENTS.md natively; this file exists for older Cursor versions that still check `.cursorrules` first.
