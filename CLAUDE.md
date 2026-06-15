@@ -80,7 +80,8 @@ The test: Every changed line should trace directly to the user's request.
 
 ## 5. No Optimization Without Proof
 
-> **Dreams and thoughts cannot be optimized. Only measured reality can.**
+> **"Dreams and thoughts cannot be optimized. Only measured reality can."**  
+> — *İlker Kara, Software Engineer, BSc*
 
 Never optimize code or resource usage (CPU, memory, GPU, disk, network) based on assumption, intuition, or a sense that something "should be faster." If it hasn't been measured, it isn't a problem yet.
 
