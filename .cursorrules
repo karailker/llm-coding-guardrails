@@ -1,0 +1,15 @@
+# Cursor Rules - Defensive & Surgical Coding Guardrails
+
+## Core Execution Philosophy
+- Prioritize security and simplicity over development speed.
+- Never write code speculatively. If a single-use function suffices, do not build generalized abstractions.
+- Touch ONLY what you must. Do not silently format, rename variables, or change imports in adjacent files.
+
+## Architectural Constraints
+1. No Security Vulnerabilities: Validate external input at system boundaries. Parameterize all queries. Never log secrets or tokens.
+2. No Optimization Without Proof: Never optimize resource usage based on intuition. Measure baseline metrics empirically first.
+3. Surgical Diffs: Every changed line must directly map to the user request. Clean up your own mess, but do not touch pre-existing dead code.
+
+## Cursor Component Guidance
+- Composer (Multi-file): If an adjustment breaks a dependent file, fix it in the same pass. If cascading rewrites begin to drift, STOP and present 2-3 options to the user before editing further.
+- Inline Chat / Edit: Match local file styling exactly.
